@@ -18,5 +18,5 @@ function modifyElement(trNode, tdNode) {
 
 
 function highlight(table) {
-  Array.from(table.querySelectorAll("tr")).map((trNode) => Array.from(trNode.children).map(tdNode => modifyElement(trNode, tdNode)));
+  Array.from(table.querySelectorAll("tr")).forEach((trNode) => Array.from(trNode.children).forEach(tdNode => modifyElement(trNode, tdNode)));
 }

@@ -4,5 +4,5 @@ function checkEquality(str) {
 }
 
 function makeDiagonalRed(table) {
-  Array.from(table.querySelectorAll("td")).filter((node) => checkEquality(node.innerText) ? node.style.backgroundColor = "red" : {});
+  Array.from(table.querySelectorAll("td")).forEach((node) => checkEquality(node.innerText) ? node.style.backgroundColor = "red" : {});
 }
